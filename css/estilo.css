@@ -1,0 +1,93 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lalezar';
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 60%), 
+    url('../img/bg_main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+body a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+body a:hover{
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+body a::after{
+    color: white;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    flex-direction: row;
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 100%;
+    gap: 0px;
+}
+
+header select{
+    text-align: left;
+    padding-left: 17px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: 'Lalezar';
+    font-size: 1.25em;
+    width: 6.438em;
+    height: 2.313em;
+    color: white;
+    background: gray url("../img/flecha.png") no-repeat 1.25em 1.25em;
+    background-position: right 35%;
+    appearance: none;
+}
+
+header img{
+    margin: auto;
+    width: 9.25em;
+    height: 9.813em;
+}
+
+header section{
+    justify-self: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 128.75px;
+}
+
+header section img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+nav{
+    grid-column: span 3;
+    justify-self: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+    position: relative;
+    border-right: 1px white solid;
+    
+}
+
+nav ul li:last-child{
+    border: none;
+}
